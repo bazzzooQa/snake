@@ -1,4 +1,8 @@
-﻿﻿﻿using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace snake
 {
@@ -12,12 +16,21 @@ namespace snake
             Point p2 = new Point(4, 5, '#');
             p2.Draw();
 
-			Console.ReadLine();
-		}
+            List<int> numList = new List<int>();
+            numList.Add(0);
+            numList.Add(1);
+            numList.Add(2);
 
-        static void Draw (int x, int y, char sym) {
-			Console.SetCursorPosition(x, y);
-			Console.Write(sym);
+            int x = numList[0];
+            int y = numList[1];
+            int z = numList[2];
+
+            foreach (int i in numList) {
+                Console.WriteLine(i);
+            }
+
+            Console.ReadLine();
         }
+
     }
 }
