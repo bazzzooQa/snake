@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿﻿using System;
 
 namespace snake
 {
@@ -10,19 +6,18 @@ namespace snake
     {
         public static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*');
+            Point p1 = new Point(2, 4, '*');
             p1.Draw();
-
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();
-
-            HorizontalLine hline = new HorizontalLine(5, 10, 8, '+');
-            hline.Draw();
-
-            VerticalLine vline = new VerticalLine(5, 10, 3, '-');
-            vline.Draw();
-
-			Console.ReadLine();
+			
+			HorizontalLine hline1 = new HorizontalLine(0, 78, 0, '#');
+			HorizontalLine hline2 = new HorizontalLine(0, 78, 23, '#');
+			VerticalLine vline1 = new VerticalLine(0, 23, 0, '#');
+			VerticalLine vline2 = new VerticalLine(0, 23, 78, '#');
+			
+			hline1.Draw();
+            hline2.Draw();
+            vline1.Draw();
+            vline2.Draw();
         }
 
     }

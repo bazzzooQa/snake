@@ -19,7 +19,7 @@ namespace snake
 
       public void Draw () {
             Console.SetCursorPosition(x, y);
-            Console.Write(sym + "\n");
+            Console.Write(sym);
         }
     }
 }
