@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace snake
 {
-    public class VerticalLine : Figure
+    class VerticalLine : Figure
     {
         public VerticalLine (int yTop, int yBottom, int x, char sym) {
             pList = new List<Point>();
